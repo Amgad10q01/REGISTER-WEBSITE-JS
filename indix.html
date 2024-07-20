@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>REGISTER WEBSITE</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="navBar">
+            <button class="btn1" id="menu">
+                <i class='bx bx-menu'></i>
+                <span>Menu</span>
+            </button>
+            <button class="btn" id="btn">
+                <i class='bx bx-menu'></i>
+                <span>Form</span>
+            </button>
+        </div>
+        <div class="navSide" id="navSide">
+            <i class='bx bxs-user-circle'></i>
+            <li><span id="user">User</span></li>
+            <li><span id="email">E-mail</span></li>
+            <li><span id="password">Password</span></li>
+            <button class="btn" id="close">
+                <i class='bx bx-exit bx-rotate-180' ></i>
+                <span>Close</span>
+            </button>
+        </div>
+        <div class="form" id="form">
+            <h2>Registeration Form</h2>
+            <div class="line"></div>
+            <li>
+                <span>User Name:</span>
+                <input type="text" id="inptxt" placeholder="Enter Your User">
+            </li>
+            <li>
+                <span>E-Mail:</span>
+                <input type="email" id="Mail" placeholder="Enter Your E-mail">
+            </li>
+            <li>
+                <span>Password:</span>
+                <div class="paas">
+                    <input type="password" class="pass" id="passwd" placeholder="Enter Your Password">
+                    <i class='bx bxs-show' id="hide"></i>
+                </div>
+            </li>
+            <button class="clear" id="clear">clear</button>
+            <button class="Submit" id="submit">Submit</button>
+        </div> 
+        <span class="alert" id="alert" >
+            
+            <span class="x" id="x"><i class='bx bx-x'></i></span>
+        </span>
+
+        <!-- script -->
+        <script src="main.js"></script>
+    </body>
+</html>

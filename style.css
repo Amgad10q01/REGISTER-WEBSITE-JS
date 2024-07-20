@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    background-color: #e9f0f8;
+    margin: 0px;
+    overflow: hidden;
+}
+span{
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+}
+/* css for navBar */
+.navBar{
+    width: 100%;
+    height: 50px;
+    background-color: #0d1821;
+    color: #fff;
+    line-height: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.navBar .btn ,
+.navBar .btn1{
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #344966;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 650px;
+    cursor: pointer;
+}
+.navBar .btn{
+    background-color: #b4cded;
+    color: #0d1821;
+}
+.navBar .btn1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.navBar button span,
+.navSide button span
+{
+    font-family: "Orbitron", sans-serif;
+}
+/* css for navSide */
+.navSide{
+    width: 150px;
+    height: 100%;
+    background-color: #344966;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    top: 50;
+    left: -100%;
+    transition: 1s ease-in-out;
+}
+.navSide i{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.navSide li{
+    list-style-type: none;
+    margin: 10px 0px 15px 0px;
+}
+.navSide .btn{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0d1821;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navSide .btn i{
+    font-size: 25px;
+    padding-bottom: 0px;
+}
+/* css for form */
+.form{
+    position: absolute;
+    left: 30%;
+    top: -100%;
+    width: 500px;
+    height: auto;
+    margin: 200px auto;
+    padding: 5px;
+    border: 3px solid #0d1821;
+    border-radius: 10px;
+    background-color: #b4cded;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+}
+.form h2{
+    text-align: center;
+    font-family: "Cormorant", serif;
+    font-size: 40px;
+}
+.form .line{
+    border: 1px solid #0d1821;
+}
+.form li{
+    width: 300px;
+    list-style-type: none;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    overflow: hidden; 
+}
+.form .paas{
+    position: relative;
+}
+.form .paas i{
+    position: absolute;
+    right: 1%;
+}
+.form button{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-color: #7d92ad;  
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;  
+}
+.form .submit{
+    margin-left: 55px;
+    background-color: #344966;
+}
+/* css for alert */
+.alert{
+    width: 300px;
+    height: 90px;
+    border: 1px solid #0d1821;
+    border-radius: 5px;
+    background-color: #e9f0f8;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #ff0000;
+    display: block;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    position: absolute;
+    bottom: 20;
+    right: -100%;
+}
+.alert .x{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 2;
+}
+/* animation for buttons */
+.btn:hover , .btn1:hover , .clear:hover , .submit:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+/* animation for spans */
+.paas i:hover,
+.form span:hover,
+.navSide li span:hover{
+    transition: 1s ease-in-out;
+    color: #e9f0f8;
+}
+.paas i:hover{
+    color: #b4cded;
+}
+.navSide li span:hover{
+    color: #0d1821;
+}
+.navSide li:hover{
+    border: 1px solid #e9f0f8;
+    transition: 1s ease-in-out;
+    background-color: #e9f0f8;
+}
